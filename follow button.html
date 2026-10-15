@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      body {
+        padding: 25px;
+      }
+
+      .title {
+        color: #5C6AC4;
+      }
+
+      .follow {
+        color: whitesmoke;
+        background: rgb(111, 255, 231);
+        border-radius: 5px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        width: 90px;
+        min-height: 40px;
+      }
+
+      .follow:hover {
+        background-color: blueviolet;
+        color: beige;
+      }
+
+      /* Must stay below :hover so red wins */
+      .follow.following {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="follow">Follow</button>
+
+    <script>
+      const followBtn = document.querySelector(".follow");
+
+      followBtn.addEventListener("click", function () {
+        followBtn.classList.toggle("following");
+        followBtn.textContent = followBtn.classList.contains("following")
+          ? "Following"
+          : "Follow";
+      });
+    </script>
+  </body>
+</html>
