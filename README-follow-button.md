@@ -4,7 +4,7 @@ A small interactive button built with plain HTML, CSS and JavaScript. Click it t
 
 ## Demo
 
-Live demo: https://YOUR-USERNAME.github.io/follow-button/
+Live demo: https://magumodestin.github.io/follow-button/
 
 ## Features
 
